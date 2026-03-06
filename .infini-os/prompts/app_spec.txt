@@ -1,0 +1,212 @@
+<project_specification>
+  <project_name>InfiniAI Website</project_name>
+
+  <overview>
+    A comprehensive multi-page marketing website showcasing AI and data solutions for Banking, Insurance, Telecom, and Education industries. The site features 54+ pages including home, service pages, industry verticals, insights/blog articles, case studies, company information, and contact forms. This modernization focuses on improving code quality, adding comprehensive testing, optimizing performance, and enhancing maintainability while preserving all existing functionality and visual design.
+  </overview>
+
+  <modernization>
+    <strategy>code_quality_improvement</strategy>
+    <current_stack>
+      <languages>TypeScript, JavaScript</languages>
+      <frontend>React 18 with Vite 5</frontend>
+      <backend>None (static site)</backend>
+      <database>None</database>
+      <styling>Tailwind CSS with shadcn/ui (Radix UI)</styling>
+    </current_stack>
+    <source_path>C:/MyProjects/infiniai-website</source_path>
+    <preserve>
+      All 54+ page routes and content
+      All UI components and visual appearance
+      All animations (Framer Motion, GSAP)
+      SEO meta tags and canonical URLs
+      Route normalization logic
+      Calendly integration
+      Dark mode support
+      Responsive design
+      Accessibility features
+    </preserve>
+  </modernization>
+
+  <technology_stack>
+    <frontend>
+      <framework>React 18 (maintained)</framework>
+      <styling>Tailwind CSS with shadcn/ui (maintained)</styling>
+    </frontend>
+    <backend>
+      <runtime>None (static site maintained)</runtime>
+      <database>None</database>
+    </backend>
+    <communication>
+      <api>None - External Calendly integration only</api>
+    </communication>
+  </technology_stack>
+
+  <prerequisites>
+    <environment_setup>
+      Node.js 18+
+      npm, yarn, or bun package manager
+      Existing codebase at C:/MyProjects/infiniai-website
+    </environment_setup>
+  </prerequisites>
+
+  <feature_count>86</feature_count>
+
+  <core_features>
+    <category name="Infrastructure Setup">
+      <feature>Initialize Vitest testing framework with React Testing Library</feature>
+      <feature>Configure test coverage reporting (target: 80%)</feature>
+      <feature>Set up ESLint strict mode for code quality</feature>
+      <feature>Configure Playwright for E2E testing (optional)</feature>
+      <feature>Create test utilities and helper functions</feature>
+    </category>
+
+    <category name="Dependency Management">
+      <feature>Audit npm dependencies for unused packages</feature>
+      <feature>Remove unused dependencies from package.json</feature>
+      <feature>Update all packages to latest compatible versions</feature>
+      <feature>Optimize bundle size with visualizer</feature>
+    </category>
+
+    <category name="Code Organization">
+      <feature>Reorganize components into logical folders</feature>
+      <feature>Create constants file for magic strings and config</feature>
+      <feature>Create centralized types definitions</feature>
+      <feature>Create route configuration module</feature>
+      <feature>Organize imports with consistent aliases</feature>
+      <feature>Create providers organization</feature>
+    </category>
+
+    <category name="Core Components Refactoring">
+      <feature>Refactor Navbar to modular approach</feature>
+      <feature>Refactor Hero to extract particle effects</feature>
+      <feature>Refactor CoreServices with data-driven structure</feature>
+      <feature>Refactor IndustriesSection with reusable cards</feature>
+      <feature>Refactor OutcomesSection for maintainability</feature>
+      <feature>Refactor Contact form to extract validation</feature>
+      <feature>Refactor ContactBook to standardize patterns</feature>
+      <feature>Refactor ContactRFP to standardize patterns</feature>
+      <feature>Refactor all page components for consistent layout</feature>
+      <feature>Extract common page layout patterns</feature>
+      <feature>Standardize component prop interfaces</feature>
+      <feature>Add JSDoc comments to components</feature>
+    </category>
+
+    <category name="UI Components Refactoring">
+      <feature>Audit and standardize 60+ shadcn/ui components</feature>
+      <feature>Remove duplicate or unused UI components</feature>
+      <feature>Create reusable animation wrapper components</feature>
+      <feature>Extract shared card component patterns</feature>
+      <feature>Standardize button variants and sizes</feature>
+      <feature>Create consistent form component wrappers</feature>
+      <feature>Refactor illustration components</feature>
+      <feature>Extract common UX utility patterns</feature>
+    </category>
+
+    <category name="Testing - Utilities & Hooks">
+      <feature>Write unit tests for utils.ts</feature>
+      <feature>Write unit tests for custom hooks</feature>
+      <feature>Create custom hook for form validation</feature>
+      <feature>Write tests for navigation utilities</feature>
+      <feature>Write tests for route normalization</feature>
+    </category>
+
+    <category name="Testing - UI Components">
+      <feature>Write tests for Navbar (desktop and mobile)</feature>
+      <feature>Write tests for Hero section</feature>
+      <feature>Write tests for CoreServices</feature>
+      <feature>Write tests for IndustriesSection</feature>
+      <feature>Write tests for Contact form</feature>
+      <feature>Write tests for all button variants</feature>
+      <feature>Write tests for card components</feature>
+      <feature>Write tests for form components</feature>
+      <feature>Write tests for dialog/modal components</feature>
+      <feature>Write tests for navigation menu dropdowns</feature>
+      <feature>Write tests for toast notifications</feature>
+      <feature>Write tests for accordion components</feature>
+      <feature>Write tests for carousel components</feature>
+      <feature>Write tests for sheet/drawer components</feature>
+      <feature>Write tests for tooltip components</feature>
+    </category>
+
+    <category name="Testing - Pages">
+      <feature>Write integration tests for home page</feature>
+      <feature>Write tests for AI Solutions pages</feature>
+      <feature>Write tests for Data Services pages</feature>
+      <feature>Write tests for Industry pages</feature>
+      <feature>Write tests for Contact pages</feature>
+      <feature>Write tests for Insights listing</feature>
+      <feature>Write tests for Case Studies</feature>
+      <feature>Write tests for Company pages</feature>
+      <feature>Write tests for navigation between pages</feature>
+      <feature>Write tests for route normalization</feature>
+    </category>
+
+    <category name="Performance Optimization">
+      <feature>Optimize all image assets</feature>
+      <feature>Implement lazy loading for route components</feature>
+      <feature>Optimize animations with will-change</feature>
+      <feature>Implement code splitting for vendor chunks</feature>
+      <feature>Configure caching headers in Vite</feature>
+      <feature>Analyze and optimize Critical CSS</feature>
+    </category>
+
+    <category name="Documentation">
+      <feature>Create README for components directory</feature>
+      <feature>Document custom hooks with examples</feature>
+      <feature>Create component documentation</feature>
+      <feature>Document build and development processes</feature>
+      <feature>Add inline comments for complex logic</feature>
+    </category>
+
+    <category name="Quality Assurance">
+      <feature>Run full test suite and verify all pass</feature>
+      <feature>Manual testing of all 54+ pages</feature>
+      <feature>Verify SEO meta tags preservation</feature>
+      <feature>Accessibility audit with Lighthouse</feature>
+      <feature>Verify performance metrics (Lighthouse >90)</feature>
+      <feature>Cross-browser testing</feature>
+    </category>
+
+    <category name="Final Polish">
+      <feature>Update project README</feature>
+      <feature>Clean up legacy comments and TODOs</feature>
+      <feature>Create Git commit with changelog</feature>
+      <feature>Create summary document of changes</feature>
+    </category>
+  </core_features>
+
+  <database_schema>
+    No database schema - this is a static site with hardcoded content.
+  </database_schema>
+
+  <api_endpoints_summary>
+    No internal API - static SPA with client-side routing.
+
+    External Integrations:
+    - Calendly Widget: https://assets.calendly.com/assets/external/widget.js
+    - Calendly URL: https://calendly.com/puttareddy/15min
+    - Google Tag Manager: GTM-WZP7NNBP
+  </api_endpoints_summary>
+
+  <implementation_steps>
+    Phase 1: Infrastructure Setup (Initialize Vitest, configure coverage, ESLint rules, Playwright setup, test utilities)
+    Phase 2: Dependency Management (Audit dependencies, remove unused, update packages, optimize bundle)
+    Phase 3: Code Organization (Reorganize components, create constants, types, routing, imports, providers)
+    Phase 4: Core Components Refactoring (Navbar, Hero, CoreServices, IndustriesSection, OutcomesSection, Contact forms, page layouts, prop interfaces, JSDoc)
+    Phase 5: UI Components Refactoring (Audit shadcn/ui, remove duplicates, animation wrappers, card patterns, button variants, form wrappers, illustrations, UX patterns)
+    Phase 6: Testing - Utilities & Hooks (Utils tests, custom hooks tests, form validation hook, navigation tests, route normalization tests)
+    Phase 7: Testing - UI Components (Navbar, Hero, CoreServices, IndustriesSection, Contact, buttons, cards, forms, dialogs, navigation, toasts, accordions, carousels, sheets, tooltips)
+    Phase 8: Testing - Pages (Home, AI Solutions, Data Services, Industries, Contact, Insights, Case Studies, Company, navigation, route normalization)
+    Phase 9: Performance Optimization (Image optimization, lazy loading, animation optimization, code splitting, caching, Critical CSS)
+    Phase 10: Documentation (README, hooks documentation, component docs, build docs, inline comments)
+    Phase 11: Quality Assurance (Test suite, manual testing, SEO verification, accessibility audit, performance metrics, cross-browser testing)
+    Phase 12: Final Polish (README update, cleanup, Git commit, summary document)
+  </implementation_steps>
+
+  <success_criteria>
+    <functionality>All 54+ existing functionality preserved and working after refactoring</functionality>
+    <data_integrity>Not applicable - no data migration (static site)</data_integrity>
+    <technical_quality>Test coverage >80%, Lighthouse performance score >90, all accessibility issues resolved, code follows consistent patterns</technical_quality>
+  </success_criteria>
+</project_specification>
